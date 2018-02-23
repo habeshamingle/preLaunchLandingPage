@@ -110,7 +110,7 @@ section {
   position: relative;
 }
 
-.insert--image.wrap-off-align-center {
+.insert--image.wrap-off-align-left {
   margin-left: auto;
   margin-right: auto;
 }
@@ -165,7 +165,7 @@ section {
 
 .bg-image {
   /* photo from: https://www.pexels.com/photo/dawn-landscape-mountains-nature-1852/ */
-  background-image: url(/res/background.jpg);
+  background-image: url("background.jpg");
   background-attachment: scroll;
   background-position: 50% 50%;
   background-size: cover;
