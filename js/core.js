@@ -12,12 +12,15 @@ $(document).ready(function () {
 		$.ajax({
 			url: "http://www.dalol.org/user_info_handler.php",
 			type: "post",
+			dataType: 'json', // this returns JSON
 			data: {
 				value1: val1,
 				value2: val2
 			},
-			success: function(d) {
-				alert(d);
+			success: function(response) {
+				alert(response);
+			},
+			error: function(){
 			}
 		});
 
