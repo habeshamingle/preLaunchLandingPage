@@ -4,7 +4,7 @@ $('#calculate').click(function () {
 	//alert('Hello ' + val1 + " , " + val2);
 
 
-	$.post("http://www.dalol.org/user_info_handler.php", { value1:value1, value2:value2 } ,function(data){
+	$.post("http://www.dalol.org/user_info_handler.php", { value1:val1, value2:val2 } ,function(data){
 		alert(data);
 	});
 });
