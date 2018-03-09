@@ -1,6 +1,10 @@
 $(document).ready(function () {
 
 	$('#calculate').click(function () {
+
+
+		alert("Hello world 1");
+
 		var val1 = $("#value1").val();
 		var val2 = $("#value2").val();
 		alert('Hello ' + val1 + " , " + val2);
@@ -13,6 +17,7 @@ $(document).ready(function () {
 			}
 			, function (data, status) {
 				alert(data);
+				alert("Hello world 2");
 			});
 	});
 
