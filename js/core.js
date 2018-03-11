@@ -1,6 +1,4 @@
-$(document).ready(function () {
-
-	$('#calculate').click(function () {
+$('#calculate').click(function () {
 
 		alert("Hello world 1");
 
@@ -37,7 +35,6 @@ $(document).ready(function () {
 		// 		alert(data);
 		// 		alert("Hello world 2");
 		// 	});
-	});
 
 
 });
