@@ -20,7 +20,10 @@ $(document).ready(function () {
 			success: function(response) {
 				alert(response);
 			},
-			error: function(){
+			error: function(xhr, textStatus, error){
+				console.log(xhr.statusText);
+				console.log(textStatus);
+				console.log(error);
 			}
 		});
 
