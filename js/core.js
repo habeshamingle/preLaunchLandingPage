@@ -1,11 +1,11 @@
 $('#calculate').click(function () {
 
-		alert("Hello world 1");
+		//alert("Hello world 1");
 
 		var val1 = $("#value1").val();
 		var val2 = $("#value2").val();
 
-		alert('Hello ' + val1 + " , " + val2);
+		//alert('Hello ' + val1 + " , " + val2);
 
 		$.ajax({
 			url: 'http://www.dalol.org/user_info_handler.php',
@@ -19,8 +19,12 @@ $('#calculate').click(function () {
 				value2: val2
 			},
 			success: function(response) {
+
+				$("#result").text(response.response);
+				
+
 				console.log(response);
-				alert(response);
+				//alert(response);
 			},
 			error: function(xhr, textStatus, error){
 				console.log(xhr.statusText);
