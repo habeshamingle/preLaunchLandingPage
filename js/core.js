@@ -16,6 +16,7 @@ $('#calculate').click(function () {
 				value2: val2
 			},
 			success: function(response) {
+				console.log(response);
 				alert(response);
 			},
 			error: function(xhr, textStatus, error){
