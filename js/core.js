@@ -10,6 +10,9 @@ $('#calculate').click(function () {
 		$.ajax({
 			url: 'http://www.dalol.org/user_info_handler.php',
 			type: 'post',
+			headers: {
+				'Content-Type': 'application/x-www-form-urlencoded'
+			},
 			dataType: 'json', // this returns JSON
 			data: {
 				value1: val1,
