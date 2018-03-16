@@ -1,0 +1,280 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16-Mar-2018, 11:50:48
+    Author     : filippo
+*/
+
+body {
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+body,html{
+    height:100%;width:100%;overflow:hidden
+}
+body{
+    margin:0;
+    padding:0;
+    background-color:#f7f4ef
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+*, :after, :before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+._header {
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-flow:row nowrap;
+    flex-flow:row nowrap;
+    -ms-flex-pack:justify;
+    justify-content:space-between;
+    -ms-flex-line-pack:center;
+    align-content:center;
+    height: 5.54278rem;
+    position: relative;
+    background-color: #fff;
+    -webkit-box-shadow: 3px 0 20px rgba(0,0,0,.4);
+    box-shadow: 3px 0 20px rgba(0,0,0,.4);
+    z-index: 5000;
+}
+
+._login_option_container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+._member_label {
+    color: #7c55fb;
+    margin-right: .7em;
+    font-size: 1em;
+}
+
+._login_button {
+    background-color: #7c55fb;
+    border: none!important;
+    color: #fff;
+    margin-right: 0;
+    cursor: pointer;
+    font-weight: 700;
+    height: 2.7em;
+    line-height: 2.7em;
+    margin-right: 24px;
+    outline: none;
+    padding: 0 1.2em;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    border: 1px solid #e0d9d0;
+    border-radius: .4em;
+}
+
+._login_button:hover {
+    background-color: #6221e6;
+    border: none!important;
+    color: #fff;
+    margin-right: 0;
+    cursor: pointer;
+    font-weight: 700;
+    height: 2.7em;
+    line-height: 2.7em;
+    margin-right: 24px;
+    outline: none;
+    padding: 0 1.2em;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    border: 1px solid #e0d9d0;
+    border-radius: .4em;
+}
+
+._logo_container {
+    height: 100%;
+}
+
+img:not([alt=""]) {
+    font-size: 0;
+}
+
+
+._header_logo {
+    height:5.54278rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+a, a:active, a:hover, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Main content*/
+
+._main_container {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    color: #433f3a;
+}
+
+._signup_form_container>* {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 3em;
+    -ms-flex: 1 0 auto;
+
+    flex: 0 0 auto;
+    flex-flow: row nowrap;
+
+    background-size: cover;
+    background-position: top;
+    margin-left:10px;
+    z-index: 2;
+    margin: 24px;
+    /*    -webkit-box-shadow: 0 0 6em 0.5em rgba(0,0,0,.4);
+        box-shadow: 0 0 6em 0.5em rgba(0,0,0,.4);*/
+}
+
+._field_input {
+    color: #433f3a;
+    vertical-align: middle;
+    padding: .7em;
+    outline: none;
+    font-weight: 400;
+    resize: none;
+    overflow: hidden;
+    border: 1px solid #e0d9d0;
+    background-color: #fff;
+    border-radius: .4em;
+    margin-top: 8px;
+    width: 100%;
+}
+
+._join_button {
+    border-radius: .4em;
+    font-size: 1em;
+    background-color: #22d569;
+    font-family: Open Sans,Helvetica,Arial,sans-serif;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    height: 2em;
+    margin-top: 12px;
+    line-height: 2em;
+    width: 100%;
+    outline: none;
+    text-align: center;
+}
+button, input, select, textarea {
+    font-size: 1em;
+}
+
+button, input[type=button], input[type=reset], input[type=submit] {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+button, input {
+    line-height: normal;
+}
+button, input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+}
+
+._slogan {
+    -ms-flex: 1 0 70%;
+    flex: 1 0 70%;
+    margin-right: -20%;
+    overflow: hidden;
+    flex-flow: row nowrap;
+    color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    padding: 40px;
+    position: absolute;
+    top:0;
+    left: 40%;
+    bottom:50%;
+    z-index: 1;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+
+._meet_habesha_label {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    font-weight: 700;
+    line-height: 1.2em;
+    font-size: 1.7em;
+    text-shadow: 0 0.1em 1em rgba(0,0,0,.5);
+}
+
+._make_connection_label {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    font-size: .8em;
+    font-weight: 400;
+    margin-top: 1em;
+    margin-bottom: 8em;
+    text-shadow: 0 0.1em 1em rgba(0,0,0,.5);
+}
+
+h1, h2 {
+    margin: 0;
+}
+h1 {
+    font-size: 2em;
+}
+
+._join_now_label {
+    font-weight: 300;
+    font-size: 2em;
+    text-align: center;
+    color: #579ee6;
+}
+h2 {
+    font-size: 1.5em;
+}
+h1, h2 {
+    margin: 0;
+}
